@@ -14,11 +14,10 @@ class CreateFundsTable extends Migration
     public function up()
     {
         Schema::create('funds', function (Blueprint $table) {
-            $table->unsignedBigInteger('training_info_id')->nullable();
-            $table->string('cohort_id');
-            $table->string('academy_id');
-            $table->unsignedBigInteger('fund_id');
-
+            $table->id();
+            $table->string('cohort_id')->nullable();
+            $table->string('academy_id')->nullable();
+            $table->string('fund_name');
             $table->timestamps();
 
             // $table->foreign('cohort_id')->references('cohort_id')->on('cohorts');

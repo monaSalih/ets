@@ -14,7 +14,7 @@ class CreateSurveyInfosTable extends Migration
     public function up()
     {
         Schema::create('survey_infos', function (Blueprint $table) {
-            $table->id('survey_info_id');
+            $table->id();
             $table->string('name');
             $table->string('url');
             $table->unsignedBigInteger('training_id')->nullable();

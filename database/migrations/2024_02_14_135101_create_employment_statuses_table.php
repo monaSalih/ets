@@ -14,7 +14,7 @@ class CreateEmploymentStatusesTable extends Migration
     public function up()
     {
         Schema::create('employment_statuses', function (Blueprint $table) {
-            $table->unsignedBigInteger('employment_stuts_id');
+            $table->id();
             $table->timestamps();
 
 

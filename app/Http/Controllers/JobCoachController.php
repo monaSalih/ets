@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class EmploymentStatusController extends Controller
+class JobCoachController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class EmploymentStatusController extends Controller
      */
     public function index()
     {
-        return view('trainees.employment_statuses');
+        //
     }
 
     /**

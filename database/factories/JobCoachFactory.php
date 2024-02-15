@@ -1,12 +1,11 @@
 <?php
 
 namespace Database\Factories;
-
-use App\Models\EmploymentStatus;
+use App\Models\JobCoach;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class EmploymentStatusFactory extends Factory
+class JobCoachFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,9 +15,10 @@ class EmploymentStatusFactory extends Factory
     public function definition()
     {
         return [
+            'name' => $this->faker->name,
+            'email' => $this->faker->unique()->safeEmail,
             'created_at' => $this->faker->dateTime(),
             'updated_at' => $this->faker->dateTime(),
-    
         ];
     }
 }
