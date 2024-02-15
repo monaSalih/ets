@@ -14,7 +14,7 @@ class CohortFactory extends Factory
     public function definition()
     {
         return [
-            'cohort_number' => $this->faker->numberBetween(1, 10), // Adjust as needed
+            'cohort_number' => $this->faker->numberBetween(1, 100), // Adjust as needed
             'training_type' => $this->faker->word,
             'technology' => $this->faker->word,
             'created_at' => $this->faker->dateTime(),

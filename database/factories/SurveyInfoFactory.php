@@ -15,7 +15,7 @@ class SurveyInfoFactory extends Factory
         return [
             'name' => $this->faker->word,
             'url' => $this->faker->url,
-            'training_id' => $this->faker->numberBetween(1, 50), // Adjust as needed
+            // 'training_id' => $this->faker->numberBetween(1, 50), // Adjust as needed
             'response_link' => $this->faker->url,
             'created_at' => $this->faker->dateTime(),
             'updated_at' => $this->faker->dateTime(),

@@ -14,10 +14,10 @@ class CreateTrainingInfosTable extends Migration
     public function up()
     {
         Schema::create('training_infos', function (Blueprint $table) {
-            $table->id('training_info_id');
-            $table->string('cohort_id');
-            $table->string('academy_id');
-            $table->unsignedBigInteger('fund_id');
+            $table->id();
+            $table->string('cohort_id')->nullable();
+            $table->string('academy_id')->nullable();
+            $table->unsignedBigInteger('fund_id')->nullable();
             $table->timestamps();
 
             // $table->foreign('cohort_id')->references('cohort_id')->on('cohort');

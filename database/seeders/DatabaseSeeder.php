@@ -31,6 +31,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Academy::factory(10)->create();
         \App\Models\Cohort::factory(10)->create();
         \App\Models\Fund::factory(10)->create();
+        \App\Models\JobCoach::factory(10)->create();
        
     }
 }

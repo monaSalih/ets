@@ -73,7 +73,15 @@ class User extends Authenticatable
 
     ];
 
+    // public function employmentStatus()
+    // {
+    //     return $this->hasOne(EmploymentStatus::class, 'employment_stuts_id');
+    // }
   
+    public function employmentStatus()
+    {
+        return $this->hasOne(EmploymentStatus::class, 'user_id');
+    }
 
     /**
      * The attributes that should be hidden for serialization.

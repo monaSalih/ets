@@ -16,7 +16,6 @@ class EmploymentTypeFactory extends Factory
     public function definition()
     {
         return [
-            'employment_id' => $this->faker->numberBetween(1, 100),
             'type' => $this->faker->word,
             'created_at' => $this->faker->dateTime(),
             'updated_at' => $this->faker->dateTime(),
