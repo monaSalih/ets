@@ -13,7 +13,9 @@ class AcademyController extends Controller
      */
     public function index()
     {
-        //
+        $academies = Academy::all();
+        @dd($academies);
+return view('welcome', ['academies' => $academies]);
     }
 
     /**

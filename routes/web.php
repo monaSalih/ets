@@ -16,9 +16,9 @@ use App\Http\Controllers\EmploymentStatusController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// view('welcome');
 Route::get('/', function () {
-    return view('welcome');
+    return view ('welcome');
 });
 
 

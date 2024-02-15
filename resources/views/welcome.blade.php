@@ -109,13 +109,17 @@
 
     <div id="localContainer" class="o-nav-local navbar-light">
         <nav role="navigation" class="container-fluid" aria-label="News categories navigation">
+           
+            @if(isset($academies))
             <ul class="nav">
                 @foreach($academies as $academy)
                 <li class="nav-item">
                     <a class="nav-link" href="#">{{$academy->name}}</a>
                 </li>
+             </ul>
                 @endforeach
-            </ul>
+                @endif
+           
             <!-- /.navbar-collapse -->
         </nav>
     </div>
